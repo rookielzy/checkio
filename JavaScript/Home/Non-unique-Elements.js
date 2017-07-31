@@ -30,3 +30,10 @@ function nonUniqueElements(arr) {
 }
 
 nonUniqueElements([1,3,2,1,3])
+
+
+function betterSolution(arr) {
+    return arr.filter(a => {
+        return arr.indexOf(a) !== arr.lastIndexOf(a)
+    })
+}
